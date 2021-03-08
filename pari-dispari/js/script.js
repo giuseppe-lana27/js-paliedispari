@@ -17,19 +17,19 @@ console.log(numeroUtente);
 console.log(numeroComputer);
 // 3. inizializzo una funzione per la somma dei numeri e verifico se pari o dispari
 var somma = 0;
-function sommaNumeri (somma, risultato){
+function sommaNumeri(somma){
   somma = numeroUtente + numeroComputer;
   return somma;
 }
 // 4. controllo se la somma è pari o dispari e dichiaro il vincitore
-function numeroPariDispari (risultato){
-  if (somma % 2 == 0 && pariDispari == "pari" || somma % 2 != 0 && pariDispari == "dispari"){
+function numeroPariDispari(totale){
+  if ((totale % 2 == 0 && pariDispari.toLowerCase() == "pari") || (totale % 2 == 1 && pariDispari.toLowerCase() == "dispari")){
     return "Hai vinto!";
   } else {
     return "Hai perso!";
   }
 }
 var sommaNumeriRandom = sommaNumeri(parseInt(somma));
-var risultato = numeroPariDispari(risultato);
+var risultato = numeroPariDispari(sommaNumeriRandom);
 console.log(sommaNumeriRandom);
 console.log(risultato);

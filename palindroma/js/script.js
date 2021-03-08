@@ -5,9 +5,9 @@ var parolaUtente = prompt("Inserisci una parola");
 // 2. scrivo la funzione per verificare se la parola è palindorma
 function palindroma (parola){
   if (parola == parola.split("").reverse().join("")){
-    return "La parola è palindroma";
+    return "La parola " + parolaUtente + " è palindroma";
   } else {
-    return "La parola non è palindroma";
+    return "La parola " + parolaUtente + " non è palindroma";
   }
 }
 // 3. stampo in console se la parola è palindroma o meno
